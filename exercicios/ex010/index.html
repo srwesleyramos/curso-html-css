@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <!-- rel: external, next, prev, nofollow -->
+    <!-- target: _blank -->
+    <!-- type: https://www.iana.org/assignments/media-types/media-types.xhtml -->
+
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar meu <a href="https://git.wesleyramos.tk" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar meu <a href="https://insta.wesleyramos.tk" target="_blank" rel="external">instagram pessoal</a></p>
+
+    <h1>Usando links internos</h1>
+    <p>Essa é a primeira página de site.</p>
+    <p>Se você quiser, pode acessar também a minha <a href="about.html" target="_self" rel="next">segunda página.</a></p>
+    <p>Você também pode acessar a nossa <a href="news/news.html" target="_self" rel="next">página de noticias.</a></p>
+
+    <h1>Usando links para download</h1>
+    <ul type="square">
+        <li><a href="books/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="books/meulivro.zip" download="meulivro.zip" type="application/zip">Baixar o livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
