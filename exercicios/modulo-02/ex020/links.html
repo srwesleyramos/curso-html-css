@@ -7,6 +7,14 @@
     <title>Links</title>
 
     <style>
+        /* SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -30,11 +38,18 @@
             color: yellow;
         }
 
-        a::after {
-            content: " (link)";
-            text-decoration: none;
-            font-weight: normal;
-            color: darkgray;
+        .especial {
+            background-color: darkred;
+            color: white;
+        }
+
+        .especial::before {
+            content: "=> ";
+
+        }
+
+        .especial::after {
+            content: " <=";
         }
     </style>
 </head>
@@ -42,8 +57,8 @@
     <h1>Personalizando Links</h1>
     <ul>
         <li><a href="https://gustavoguanabara.github.io">Repositório do GitHub</a></li>
-        <li><a href="https://youtube.com/cursoemvideo">Canal do Youtube</a></li>
-        <li><a href="https://cursoemvideo.com">Site do CursoemVideo</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
     </ul>
 </body>
 </html>
